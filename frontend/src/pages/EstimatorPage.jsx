@@ -172,7 +172,7 @@ export default function EstimatorPage() {
     if (!estimate) return;
     const summary = `${estimate.device} — ${estimate.repairs.join(", ")}\nEstimated repair cost: ₹${estimate.minimum.toLocaleString(
       "en-IN"
-    )}–₹${estimate.maximum.toLocaleString("en-IN")}\nEstimated time: ${estimate.repair_time}\n(via RepairCheck — estimate only, not a guaranteed quote)`;
+    )}–₹${estimate.maximum.toLocaleString("en-IN")}\nEstimated time: ${estimate.repair_time}\n(via ReFix — estimate only, not a guaranteed quote)`;
 
     if (navigator.share) {
       navigator.share({ title: "Repair cost estimate", text: summary }).catch(() => {});
